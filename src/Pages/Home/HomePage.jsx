@@ -1,5 +1,9 @@
+import HeroSection from "../../Components/HomePage/HeroSection";
+
 export default function HomePage() {
-  return <div className="lg:w-[90%] w-[95%] mx-auto">
-    
-  </div>;
+  return (
+    <div className="">
+      <HeroSection></HeroSection>
+    </div>
+  );
 }

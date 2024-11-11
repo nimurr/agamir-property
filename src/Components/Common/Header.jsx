@@ -1,26 +1,33 @@
-import { Button, Navbar } from "flowbite-react";
+import {  Navbar } from "flowbite-react";
+import { FaUserCircle } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="relative">
-      <Navbar fluid rounded>
-        <Navbar.Brand href="#"> 
+    <div className="bg-primary">
+      <Navbar className="bg-transparent lg:w-[90%] w-[95%] mx-auto">
+        <Navbar.Brand href="#">
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Flowbite React
+            Flowbite
           </span>
         </Navbar.Brand>
-        <div className="flex md:order-2">
-          <Button>Get started</Button>
-          <Navbar.Toggle />
+        <div className="flex gap-2 items-center md:order-2">
+          <button className="bg-yellow-400 py-3 sm:px-10 px-5 rounded-md">
+            Sell property{" "}
+            <span className="bg-blue-700 text-white px-1 ml-1 rounded-md">
+              Free
+            </span>
+          </button>
+          <FaUserCircle className="text-white text-4xl cursor-pointer" />
+
+          <Navbar.Toggle className="text-white active:text-black focus:text-black" />
         </div>
-        <Navbar.Collapse>
-          <Navbar.Link href="#" active>
+        <Navbar.Collapse className="text-white">
+          <NavLink to={'/'} >
             Home
-          </Navbar.Link>
-          <Navbar.Link href="#">About</Navbar.Link>
-          <Navbar.Link href="#">Services</Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
-          <Navbar.Link href="#">Contact</Navbar.Link>
+          </NavLink>
+          <NavLink to={'/'} >New Properties</NavLink>
+          <NavLink to={'/'} >Blog</NavLink>
         </Navbar.Collapse>
       </Navbar>
     </div>

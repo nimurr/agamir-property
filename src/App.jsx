@@ -7,6 +7,10 @@ import Footer from "./Components/Common/Footer";
 import { FaRegUser } from "react-icons/fa";
 import { IoHomeSharp } from "react-icons/io5";
 
+
+
+// lg:w-[90%] w-[95%] mx-auto
+
 function App() {
   const { loading } = useContext(AuthContext);
 
