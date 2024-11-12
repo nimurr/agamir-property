@@ -13,11 +13,11 @@ export default function FooterMain() {
 
   return (
     <div>
-      <footer className="bg-gray-100 dark:bg-gray-900">
+      <footer className="bg-primary text-white">
         <div className="lg:w-[90%] w-[95%] mx-auto">
           <div className="grid sm:grid-cols-2 gap-8 py-6 lg:py-8 md:grid-cols-4">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">
                 About Company
               </h2>
               <span className="self-center whitespace-nowrap text-xl font-semibold ">
@@ -37,17 +37,17 @@ export default function FooterMain() {
               </p>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">
                 Help center
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className=" dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <Link
                     target="_blank"
                     to={
                       "https://www.facebook.com/profile.php?id=61564583527835"
                     }
-                    className="hover:underline hover:text-primary"
+                    className="hover:underline hover:text-black"
                   >
                     FaceBook
                   </Link>
@@ -56,7 +56,7 @@ export default function FooterMain() {
                   <Link
                     target="_blank"
                     to={`https://api.whatsapp.com/send/?phone=%2B88${settingInfo[0]?.wpNumber}&text&type=phone_number&app_absent=0`}
-                    className="hover:underline hover:text-primary"
+                    className="hover:underline hover:text-black"
                   >
                     WhatsApp
                   </Link>
@@ -65,7 +65,7 @@ export default function FooterMain() {
                 <li className="mb-4">
                   <Link
                     to={"/contact-us"}
-                    className="hover:underline hover:text-primary"
+                    className="hover:underline hover:text-black"
                   >
                     Contact Us
                   </Link>
@@ -73,14 +73,14 @@ export default function FooterMain() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">
                 Our Services
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className=" dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <Link
                     to={"/about-us"}
-                    className="hover:underline hover:text-primary"
+                    className="hover:underline hover:text-black"
                   >
                     High-quality Goods
                   </Link>
@@ -88,7 +88,7 @@ export default function FooterMain() {
                 <li className="mb-4">
                   <Link
                     to={"/about-us"}
-                    className="hover:underline hover:text-primary"
+                    className="hover:underline hover:text-black"
                   >
                     24/7 Live chat
                   </Link>
@@ -96,7 +96,7 @@ export default function FooterMain() {
                 <li className="mb-4">
                   <Link
                     to={"/about-us"}
-                    className="hover:underline hover:text-primary"
+                    className="hover:underline hover:text-black"
                   >
                     Express Shipping
                   </Link>
@@ -104,7 +104,7 @@ export default function FooterMain() {
                 <li className="mb-4">
                   <Link
                     to={"/about-us"}
-                    className="hover:underline hover:text-primary"
+                    className="hover:underline hover:text-black"
                   >
                     Secure Payment
                   </Link>
@@ -112,11 +112,11 @@ export default function FooterMain() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">
                 Download
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4 hover:text-primary">
+              <ul className=" dark:text-gray-400 font-medium">
+                <li className="mb-4 hover:text-black">
                   <a
                     href="#"
                     className="hover:underline flex items-start gap-3"
@@ -138,11 +138,11 @@ export default function FooterMain() {
             </div> */}
           </div>
 
-          <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-            <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+          <div className="px-4 py-6 bg-blue-800 flex items-center justify-center">
+            <span className="text-sm text-white sm:text-center">
               © 2023 <a href="https://flowbite.com/">SopnerPesha™</a>. All
               Rights Reserved. Created By{" "}
-              <span className="font-bold text-primary dark:text-white">
+              <span className="font-bold text-white">
                 Nimur Rahman Nerob
               </span>
             </span>
