@@ -1,12 +1,10 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { useEffect, useState } from "react"; 
 import { Link } from "react-router-dom";
 export default function FooterMain() {
-
   const [settingInfo, setSettingInfo] = useState([]);
-  console.log(settingInfo)
-  
+  console.log(settingInfo);
+
   useEffect(() => {
     axios.get("http://localhost:5000/site-settings").then((res) => {
       if (res?.data) setSettingInfo(res?.data);
@@ -15,18 +13,16 @@ export default function FooterMain() {
 
   return (
     <div>
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className="bg-gray-100 dark:bg-gray-900">
         <div className="lg:w-[90%] w-[95%] mx-auto">
           <div className="grid sm:grid-cols-2 gap-8 py-6 lg:py-8 md:grid-cols-4">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 About Company
               </h2>
-              <img
-                className="w-32"
-                src="https://res.cloudinary.com/nerob/image/upload/v1729064831/p2ix7dofpoiuu5419jk5.png"
-                alt=""
-              />
+              <span className="self-center whitespace-nowrap text-xl font-semibold ">
+                Agamir <span className="text-xs">Property</span>
+              </span>
               <p className="dark:text-white mt-5 ">
                 Elevate Your Style with mohasagor.com- Unleash the latest
                 fashion trends at your fingertips. Discover curated collections,
@@ -64,7 +60,7 @@ export default function FooterMain() {
                   >
                     WhatsApp
                   </Link>
-                </li> 
+                </li>
 
                 <li className="mb-4">
                   <Link
@@ -95,7 +91,6 @@ export default function FooterMain() {
                     className="hover:underline hover:text-primary"
                   >
                     24/7 Live chat
-
                   </Link>
                 </li>
                 <li className="mb-4">
@@ -104,7 +99,6 @@ export default function FooterMain() {
                     className="hover:underline hover:text-primary"
                   >
                     Express Shipping
-
                   </Link>
                 </li>
                 <li className="mb-4">
@@ -113,9 +107,8 @@ export default function FooterMain() {
                     className="hover:underline hover:text-primary"
                   >
                     Secure Payment
-
                   </Link>
-                </li> 
+                </li>
               </ul>
             </div>
             <div>

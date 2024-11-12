@@ -7,7 +7,6 @@ body {
   font-style: normal;
   position: relative;
   height: 100%;
-  background: #f2f2f2;
 }
 
 ::-webkit-scrollbar {
@@ -58,5 +57,80 @@ body {
   object-fit: cover;
 }
 
+/* ============ */
+
+.slider {
+  height: auto;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  width: calc(250px * 18);
+  animation: scroll 30s linear infinite; /* Added 's' for seconds */
+}
+
+.slider-track:hover {
+  animation-play-state: paused; /* this line is not working  */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.slide {
+  height: auto;
+  width: 350px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* padding: 15px; */
+  perspective: 100px;
+}
+
+.slide img {
+  transition: 0.5s;
+}
+
+/* .slide img:hover {
+  transform: translateZ(20px);
+} */
+
+.slider::before,
+.slider::after {
+  /* Corrected selector to reference .slider */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.91) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: -1;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
 
 
