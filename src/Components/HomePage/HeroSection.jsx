@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <div className="mb-20">
       <div className="bg-[url('https://res.cloudinary.com/dwkqtskan/image/upload/v1731334531/Agamir_property/HomePage/jr4vsjh5rp2wnrn0b0kk.jpg')] min-h-[70vh] bg-cover bg-center relative">
-        <div className="min-h-[50vh] w-full flex justify-center">
+        <div className="min-h-[50vh] w-full flex justify-center items-center">
           <div className="text-center mt-10 md:text-6xl text-3xl px-5 sm:px-0 font-semibold">
             <h2 className="text-[#7e9966] flex gap-5 items-end justify-center">
               Block A{" "}
