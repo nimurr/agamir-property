@@ -1,4 +1,5 @@
 import BlockFeatures from "../../Components/HomePage/BlockFeatures";
+import Contact from "../../Components/HomePage/Contact";
 import FaqSection from "../../Components/HomePage/FaqSection";
 import HeroSection from "../../Components/HomePage/HeroSection";
 import LandPlots from "../../Components/HomePage/LandPlots";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <FaqSection></FaqSection>
       <OurCustomerReview></OurCustomerReview>
       <MapArea></MapArea>
+      <Contact></Contact>
     </div>
   );
 }
