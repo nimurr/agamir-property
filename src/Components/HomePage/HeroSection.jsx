@@ -7,8 +7,8 @@ export default function HeroSection() {
 
   return (
     <div className="mb-20">
-      <div className="bg-[url('https://res.cloudinary.com/dwkqtskan/image/upload/v1731334531/Agamir_property/HomePage/jr4vsjh5rp2wnrn0b0kk.jpg')] min-h-[70vh] bg-cover bg-center relative">
-        <div className="sm:min-h-[50vh] min-h-[40vh] w-full flex justify-center items-center">
+      <div className="bg-[url('https://res.cloudinary.com/dwkqtskan/image/upload/v1731334531/Agamir_property/HomePage/jr4vsjh5rp2wnrn0b0kk.jpg')] min-h-[55vh] sm:min-h-[75vh] bg-cover bg-center relative">
+        <div className="sm:min-h-[50vh] min-h-[35vh] w-full flex justify-center items-center">
           <div className="text-center sm:mt-10 mt-5 md:text-6xl text-3xl px-5 sm:px-0 font-semibold">
             <h2 className="text-[#7e9966] flex gap-5 items-end justify-center">
               Block A{" "}
@@ -21,7 +21,7 @@ export default function HeroSection() {
             </h2>
           </div>
         </div>
-        <div className="mt-10 absolute w-full">
+        <div className="sm:mt-12 mt-8 absolute w-full">
           <div className="p-4">
             {/* Tab Navigation */}
             <div className="flex justify-center">
@@ -51,7 +51,7 @@ export default function HeroSection() {
             {activeTab && (
               <div className="">
                 {activeTab === "FLAT" && (
-                  <div className="lg:w-5/12 mx-auto px-10 bg-gray-100 py-5 rounded-md flex flex-wrap gap-5 items-center justify-center">
+                  <div className="xl:w-5/12 mx-auto px-10 bg-gray-100 py-5 rounded-md flex flex-wrap gap-5 items-center justify-center">
                     <span className="flex items-center gap-2 p-2 rounded-md border-2 border-primary">
                       <MdOutlineHomeWork /> Flat Type
                     </span>
@@ -68,7 +68,7 @@ export default function HeroSection() {
                   </div>
                 )}
                 {activeTab === "PLOT" && (
-                  <div className="lg:w-5/12 mx-auto px-10 bg-gray-100 py-5 rounded-md flex flex-wrap gap-5 items-center justify-center">
+                  <div className="xl:w-5/12 mx-auto px-10 bg-gray-100 py-5 rounded-md flex flex-wrap gap-5 items-center justify-center">
                     <span className="flex items-center gap-2 p-2 rounded-md border-2 border-primary">
                       <MdOutlineHomeWork /> Plot Type
                     </span>
