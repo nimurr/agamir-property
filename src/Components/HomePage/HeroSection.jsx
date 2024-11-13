@@ -21,8 +21,8 @@ export default function HeroSection() {
             </h2>
           </div>
         </div>
-        <div className="sm:mt-12 mt-8 absolute w-full">
-          <div className="p-4">
+        <div className="lg:-bottom-16 mt-8 absolute w-full">
+          <div className="p-5">
             {/* Tab Navigation */}
             <div className="flex justify-center">
               <button
@@ -51,7 +51,7 @@ export default function HeroSection() {
             {activeTab && (
               <div className="">
                 {activeTab === "FLAT" && (
-                  <div className="xl:w-5/12 mx-auto px-10 bg-gray-100 py-5 rounded-md flex flex-wrap gap-5 items-center justify-center">
+                  <div className="xl:w-6/12 mx-auto px-10 bg-gray-100 py-5 rounded-md flex flex-wrap gap-5 items-center justify-center">
                     <span className="flex items-center gap-2 p-2 rounded-md border-2 border-primary">
                       <MdOutlineHomeWork /> Flat Type
                     </span>
@@ -68,7 +68,7 @@ export default function HeroSection() {
                   </div>
                 )}
                 {activeTab === "PLOT" && (
-                  <div className="xl:w-5/12 mx-auto px-10 bg-gray-100 py-5 rounded-md flex flex-wrap gap-5 items-center justify-center">
+                  <div className="xl:w-6/12 mx-auto px-10 bg-gray-100 py-5 rounded-md flex flex-wrap gap-5 items-center justify-center">
                     <span className="flex items-center gap-2 p-2 rounded-md border-2 border-primary">
                       <MdOutlineHomeWork /> Plot Type
                     </span>
