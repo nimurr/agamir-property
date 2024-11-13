@@ -16,12 +16,11 @@ function App() {
 
   if (loading) {
     return (
-      <div className="w-32 mx-auto my-[250px]">
-        <img
-          className="w-full animate-pulse"
-          src="https://res.cloudinary.com/nerob/image/upload/v1729153381/BongoBuy/vjrj5chnn35depdimlhs.gif"
-          alt=""
-        />
+      <div className="w-[100vw] h-[100vh] flex justify-center items-center">
+        <div
+          className="w-12 h-12 rounded-full animate-spin
+border-4 border-solid border-primary border-t-transparent"
+        ></div>
       </div>
     );
   }
