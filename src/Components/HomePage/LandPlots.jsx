@@ -3,6 +3,7 @@ import SectionHeader from "../Common/SectionHeader";
 import { RiCheckboxMultipleBlankLine } from "react-icons/ri";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { TbHomeSearch } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 export default function LandPlots() {
   return (
@@ -45,9 +46,9 @@ export default function LandPlots() {
         ))}
       </div>
       <div className="flex justify-center">
-        <button className="text-center w-48 py-2 rounded-md bg-primary  text-white">
+        <Link to={'/all-plot'} className="text-center w-48 py-2 rounded-md bg-primary  text-white">
           More Plot ... 
-        </button>
+        </Link>
       </div>
     </div>
   );

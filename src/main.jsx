@@ -9,6 +9,7 @@ import ErrorPage from "./Pages/Others/ErrorPage.jsx";
 import Login from "./Pages/Auth/Login.jsx";
 import Register from "./Pages/Auth/Register.jsx";
 import { PrimeReactProvider } from "primereact/api";
+import AllPlot from "./Pages/AllPlot/AllPlot.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage></HomePage>,
+      },
+      {
+        path: "/all-plot",
+        element: <AllPlot></AllPlot>,
       },
       {
         path: "/login",

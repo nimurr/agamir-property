@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="bg-primary">
       <Navbar className="bg-transparent lg:w-[90%] w-[95%] mx-auto">
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <span className="self-center  whitespace-nowrap sm:text-xl text-sm font-semibold text-white">
             Agamir <span className="text-xs">Property</span>
           </span>

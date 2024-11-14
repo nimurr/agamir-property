@@ -6,9 +6,9 @@ export default function SectionHeader({state}) {
       <h2 className="xl:text-5xl text-3xl font-semibold  text-center">
         {state}
       </h2>
-      <div>
-        <span className="w-52 h-[2px] bg-gray-400 mb-1 block mx-auto"></span>
-        <span className="w-36 h-[2px] bg-gray-400 block mx-auto"></span>
+      <div className="flex flex-col gap-1 mt-3">
+        <span className="w-52 h-[3px] bg-primary block mx-auto"></span>
+        <span className="w-36 h-[2px] bg-primary block mx-auto"></span>
       </div>
     </div>
   );
